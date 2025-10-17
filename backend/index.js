@@ -14,41 +14,45 @@ dotenv.config({ path: path.join(__dirname, ".env") });
 const app = express();
 
 // ✅ CORS setup
-const allowedOrigins = [
-  "https://full-stack-home-solar.vercel",
-  "http://localhost:5173",
-  "http://localhost:5174",
-  "http://127.0.0.1:5173",
-  "http://localhost:3000",
-  "http://127.0.0.1:3000",
-  "file://", // Allow file:// protocol for local development
-];
+// const allowedOrigins = [
+//   "https://full-stack-home-solar.vercel",
+//   "http://localhost:5173",
+//   "http://localhost:5174",
+//   "http://127.0.0.1:5173",
+//   "http://localhost:3000",
+//   "http://127.0.0.1:3000",
+//   "file://", // Allow file:// protocol for local development
+// ];
+
+// app.use(cors({
+//   origin: (origin, callback) => {
+//     // Allow requests with no origin (like mobile apps or curl requests)
+//     if (!origin) return callback(null, true);
+    
+//     // Check if origin is in allowed list
+//     if (allowedOrigins.includes(origin)) {
+//       return callback(null, true);
+//     }
+    
+//     // Allow file:// protocol for local development
+//     if (origin.startsWith('file://')) {
+//       return callback(null, true);
+//     }
+    
+//     // For development, allow all localhost origins
+//     if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
+//       return callback(null, true);
+//     }
+    
+//     callback(new Error("Not allowed by CORS"));
+//   },
+//   credentials: true,
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+// }));
 
 app.use(cors({
-  origin: (origin, callback) => {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-    
-    // Check if origin is in allowed list
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
-    
-    // Allow file:// protocol for local development
-    if (origin.startsWith('file://')) {
-      return callback(null, true);
-    }
-    
-    // For development, allow all localhost origins
-    if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
-      return callback(null, true);
-    }
-    
-    callback(new Error("Not allowed by CORS"));
-  },
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  origin: "*"
 }));
 
 app.use(express.json());
