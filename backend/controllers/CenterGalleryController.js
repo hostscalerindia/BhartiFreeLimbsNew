@@ -7,7 +7,7 @@ export const centerGalleryUpload = multer({ storage: multer.memoryStorage() });
 export const centerGalleryUploadMultiple = multer({
   storage: multer.memoryStorage(),
   limits: {
-    fileSize: 5 * 1024 * 1024 // 5MB limit per file
+    fileSize: 20 * 1024 * 1024 // 5MB limit per file
   },
   fileFilter: (req, file, cb) => {
     const allowedMimeTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp'];

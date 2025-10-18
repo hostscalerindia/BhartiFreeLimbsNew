@@ -168,7 +168,7 @@
 
 //         {/* Announcement Ticker */}
 //         {announcements && announcements.length > 0 && (
-//           <div className="bg-yellow-100 border-b border-yellow-300 text-yellow-900">
+//           <div className="bg-[#fbf9e4] border-b border-yellow-300 text-yellow-900">
 //             <div className="max-w-7xl mx-auto px-4 flex items-center h-8 overflow-hidden relative">
 //               <i className="fa fa-bullhorn mr-3 text-yellow-700 z-10"></i>
 //               <div className="flex w-full overflow-hidden relative">
@@ -450,8 +450,8 @@ function Navbar() {
 
         {/* Announcement Ticker */}
         {announcements && announcements.length > 0 && (
-          <div className="bg-yellow-100 border-t border-yellow-300 text-yellow-900">
-            <div className="max-w-7xl mx-auto px-4 flex items-center h-8 overflow-hidden relative">
+          <div className="bg-[#fbf9e4] border-t border-yellow-300 text-yellow-900">
+            <div className="max-w-7xl mx-auto px-4 flex items-center h-8 overflow-hidden relative lg:px-[58px]">
               <i className="fa fa-bullhorn mr-3 text-yellow-700 z-10"></i>
               <div className="w-full overflow-hidden">
                 <div className="flex animate-marquee hover:pause-marquee">

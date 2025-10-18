@@ -336,7 +336,7 @@ const ServiceTypeForm = () => {
                       <div className="flex gap-2">
                         <button
                           onClick={() => handleEdit(serviceType)}
-                          className="bg-yellow-100 hover:bg-yellow-200 text-yellow-700 p-2 rounded-lg transition-colors duration-200"
+                          className="bg-[#fbf9e4] hover:bg-yellow-200 text-yellow-700 p-2 rounded-lg transition-colors duration-200"
                           title="Edit Service Type"
                         >
                           <i className="fa fa-edit text-xs"></i>

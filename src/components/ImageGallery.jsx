@@ -55,7 +55,7 @@ const ImageGallery = () => {
   if (galleryItems.length === 0) return <div>No gallery items</div>
 
   return (
-    <section className="py-16 bg-yellow-100 relative overflow-hidden">
+    <section className="py-16 bg-[#fbf9e4] relative overflow-hidden">
       <div className="relative overflow-hidden">
         <div
           className={`flex ${enableTransition ? 'transition-transform duration-700 ease-linear' : ''}`}
