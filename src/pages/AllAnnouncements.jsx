@@ -23,20 +23,20 @@ const AllAnnouncements = () => {
         `}</style>
 
         {/* Hero Section */}
-        <section className="bg-section-second text-white py-20 relative overflow-hidden">
+        <section className="bg-section-second text-white py-5 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
               All Announcements
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base mb-6 max-w-3xl mx-auto opacity-90 leading-relaxed">
               Stay updated with our latest news and announcements.
             </p>
-            <Link to="/">
+            {/* <Link to="/">
               <button className="bg-primary hover:bg-primary-600 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center mx-auto transform hover:scale-105 shadow-lg hover:shadow-xl">
                 <i className="fa fa-arrow-left mr-2"></i>
                 Back to Home
               </button>
-            </Link>
+            </Link> */}
           </div>
         </section>
 
@@ -81,7 +81,7 @@ const AllAnnouncements = () => {
       `}</style>
 
       {/* Hero Section */}
-      <section className="bg-section-second text-white py-20 relative overflow-hidden">
+      <section className="bg-section-second text-white py-5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-20 lg:px-8 text-center relative z-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
             All Announcements

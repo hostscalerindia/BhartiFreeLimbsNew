@@ -66,7 +66,7 @@ const GalleryDetails = () => {
       `}</style>
       
       {/* Hero Section */}
-      <section className="bg-section-second text-white py-40 relative overflow-hidden">
+      <section className="bg-section-second text-white py-5 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -97,19 +97,11 @@ const GalleryDetails = () => {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8 text-center relative z-10">
-          {/* Top Tagline */}
-          <div className="mb-6">
-            <p className="text-primary text-sm md:text-2xl font-medium flex items-center justify-center">
-              <i className="fa fa-images mr-2"></i>
-              Gallery Details
-            </p>
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <div className="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8 text-center relative z-10">          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
             Our Gallery
           </h1>
-          <p className="text-xs md:text-sm mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base mb-6 max-w-3xl mx-auto opacity-90 leading-relaxed">
             Explore our collection of memorable moments and impactful work from our organization.
           </p>
         </div>

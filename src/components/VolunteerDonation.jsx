@@ -29,21 +29,22 @@ const VolunteerDonation = () => {
               </h2>
 
               <p className="text-white text-xs md:text-sm mb-6 opacity-90 leading-relaxed">
-                Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit The aspernaturaut odit aut fugit, sed quia consequuntur. Nonprofits around the world apply
+                Join us in making a real difference. Your time, effort, and kindness can bring hope to those who need it the most.
+                Together, we can build a better tomorrow—one act of compassion at a time.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="flex items-center text-white">
                   <i className="fa fa-check text-white mr-2 text-sm"></i>
-                  <span className="text-xs">Donate Money</span>
+                  <span className="text-xs">Support Those in Need</span>
                 </div>
                 <div className="flex items-center text-white">
                   <i className="fa fa-check text-white mr-2 text-xs"></i>
-                  <span className="text-xs">Handle With Care</span>
+                  <span className="text-xs">Spread Love and Care</span>
                 </div>
                 <div className="flex items-center text-white">
                   <i className="fa fa-check text-white mr-2 text-xs"></i>
-                  <span className="text-xs">Donate Money</span>
+                  <span className="text-xs">Be the Reason Someone Smiles</span>
                 </div>
               </div>
 
@@ -52,12 +53,13 @@ const VolunteerDonation = () => {
                 Become A Volunteer
               </button>
             </div>
+
           </div>
 
           {/* Right Section - Send a Gift For Children's */}
           <div className="donation-section relative overflow-hidden">
             {/* Background Image */}
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: `url(${children})`,
@@ -82,13 +84,12 @@ const VolunteerDonation = () => {
                   <button
                     key={amount}
                     onClick={() => setSelectedAmount(amount)}
-                    className={`donation-amount-btn px-4 py-2 rounded-full font-semibold text-sm border-2 transition-all duration-300 ${
-                      amount === selectedAmount 
-                        ? 'selected text-white' 
-                        : amount === 50 
-                          ? 'blue text-white border-blue-500' 
+                    className={`donation-amount-btn px-4 py-2 rounded-full font-semibold text-sm border-2 transition-all duration-300 ${amount === selectedAmount
+                        ? 'selected text-white'
+                        : amount === 50
+                          ? 'blue text-white border-blue-500'
                           : 'text-white border-white hover:bg-white hover:text-primary'
-                    }`}
+                      }`}
                   >
                     ${amount}
                   </button>

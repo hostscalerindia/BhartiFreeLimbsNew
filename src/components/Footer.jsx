@@ -39,7 +39,7 @@ const Footer = () => {
                   Send Email
                 </p>
                 <p className="text-white font-bold text-sm sm:text-base">
-                  bhartifreelimbs.com
+                  bhartifreelimbs@gmail.com
                 </p>
               </div>
             </div>

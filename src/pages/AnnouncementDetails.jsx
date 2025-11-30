@@ -80,7 +80,7 @@ const AnnouncementDetails = () => {
       `}</style>
 
       {/* Hero Section */}
-      <section className="bg-section-second text-white py-20 relative overflow-hidden">
+      <section className="bg-section-second text-white py-5 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"

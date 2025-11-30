@@ -54,7 +54,6 @@ const ServiceForm = () => {
       setLoading(true);
       setMessage('');
       
-      // Comprehensive validation
       if (!form.title.trim()) {
         throw new Error('Center name is required');
       }

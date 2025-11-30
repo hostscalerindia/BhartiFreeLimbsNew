@@ -19,7 +19,7 @@ const AllEvents = () => {
       `}</style>
       
       {/* Hero Section */}
-      <section className="bg-section-second text-white py-40 relative overflow-hidden">
+      <section className="bg-section-second text-white py-5 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -44,10 +44,10 @@ const AllEvents = () => {
             </p>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
             All Our Events
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base mb-6 max-w-3xl mx-auto opacity-90 leading-relaxed">
             Discover all our upcoming events, campaigns, and community initiatives in one place.
           </p>
         </div>

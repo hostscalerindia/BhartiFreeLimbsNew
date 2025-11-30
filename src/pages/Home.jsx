@@ -5,6 +5,7 @@ import VolunteerDonation from '../components/VolunteerDonation'
 import Announcements from '../components/Announcements'
 import DonationHero from '../components/DonationHero'
 import unity from '../image/unity.jpg'
+import Statistics from "../components/Statistics";
 
 const Home = () => {
   return (
@@ -12,14 +13,15 @@ const Home = () => {
       <HomeBanner />
       <Services />
       <ImageGallery />
-      <DonationHero
+      {/* <DonationHero
         backgroundImage={unity}
         tagline="Start Donating Poor People"
         title="Children Need Your Help By Donating Today"
         height="h-[80vh]"
         showWavyBorder={true}
         overlayOpacity="bg-opacity-60"
-      />
+      /> */}
+      <Statistics/>
       <Announcements />
       <VolunteerDonation />
 

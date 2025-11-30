@@ -1,16 +1,17 @@
 import heartShapeImage from "../image/heart-shape-image.png";
-import aboutVector1 from "../image/about-img-vector-1.svg";
-import aboutVector2 from "../image/about-img-vector-2.svg";
+// import aboutVector1 from "../image/about-img-vector-1.svg";
+// import aboutVector2 from "../image/about-img-vector-2.svg";
 import DonationHero from "../components/DonationHero";
-import Statistics from "../components/Statistics";
+// import Statistics from "../components/Statistics";
 import EventSchedule from "../components/EventSchedule";
 import Team from "../components/Team";
 import hand from "../image/hands.jpg"
+import InfoSection from "../components/InfoSection";
 
 const About = () => {
   return (
     <div>
-      <section className="bg-section-second text-white py-20 relative overflow-hidden">
+      <section className="bg-section-second text-white py-5 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -22,7 +23,7 @@ const About = () => {
         </div>
 
         {/* Decorative Vector Elements */}
-        <div className="absolute top-6 left-6 opacity-20">
+        {/* <div className="absolute top-6 left-6 opacity-20">
           <img
             src={aboutVector1}
             alt="Decorative vector"
@@ -42,7 +43,7 @@ const About = () => {
             alt="Decorative vector"
             className="w-24 h-12 object-contain transform -rotate-12"
           />
-        </div>
+        </div> */}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 text-center relative z-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
@@ -56,7 +57,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white relative overflow-hidden">
+      <section className=" bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Section - Heart Shape Image */}
@@ -70,7 +71,7 @@ const About = () => {
 
             {/* Right Section - Content */}
             <div className="space-y-8">
-              {/* About Us Header */}
+              {/* About Us Header
               <div className="flex items-center mb-6">
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
                   <i className="fa fa-heart text-white text-sm"></i>
@@ -78,7 +79,7 @@ const About = () => {
                 <span className="text-primary text-sm md:text-2xl font-medium">
                   About Us
                 </span>
-              </div>
+              </div> */}
 
               {/* Main Heading */}
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-800 leading-tight">
@@ -98,7 +99,7 @@ const About = () => {
         </div>
 
         {/* Decorative Vector Elements */}
-        <div className="absolute bottom-8 left-8 opacity-20">
+        {/* <div className="absolute bottom-8 left-8 opacity-20">
           <img
             src={aboutVector1}
             alt="Decorative vector"
@@ -111,9 +112,12 @@ const About = () => {
             alt="Decorative vector hearts"
             className="w-24 h-24 object-contain"
           />
-        </div>
+        </div> */}
       </section>
 
+      <InfoSection/>
+
+      {/* 
       <DonationHero
         backgroundImage={hand}
         tagline="Empowering Lives"
@@ -121,11 +125,11 @@ const About = () => {
         height="h-[70vh]"
         showWavyBorder={true}
         overlayOpacity="bg-opacity-50"
-      />
+      /> */}
 
+      {/* <Statistics /> */}
+      {/* <EventSchedule /> */}
       <Team />
-      <Statistics />
-      <EventSchedule />
     </div>
   );
 };
